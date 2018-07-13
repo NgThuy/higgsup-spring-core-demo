@@ -22,6 +22,7 @@ public class Person {
     public Person(Address address) {
         this.address = address;
     }
+    
     @Autowired
     public Person(Account account, Address address) {
         this.account = account;
@@ -31,6 +32,7 @@ public class Person {
     public String getName() {
         return name;
     }
+    
     @Value("Thúy An")
     public void setName(String name) {
         this.name = name;
@@ -39,6 +41,7 @@ public class Person {
     public int getAge() {
         return age;
     }
+    
     @Value("20")
     public void setAge(int age) {
         this.age = age;
@@ -47,6 +50,7 @@ public class Person {
     public String getGender() {
         return gender;
     }
+    
     @Value("Nữ")
     public void setGender(String gender) {
         this.gender = gender;
