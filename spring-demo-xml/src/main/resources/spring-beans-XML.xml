@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="account" class="com.higgsup.intern.spring.pojo.Account">
+        <property name="account" value="Viettin bank"/>
+    </bean>
+
+    <bean id="address" class="com.higgsup.intern.spring.pojo.Address">
+        <property name="address" value="Hà Nội"/>
+    </bean>
+
+    <bean id="person" class="com.higgsup.intern.spring.pojo.Person">
+        <constructor-arg name="name" value="Minh Anh"/>
+        <constructor-arg name="age" value="30"/>
+        <constructor-arg name="gender" value="nam"/>
+        <constructor-arg name="account" ref="account"/>
+        <constructor-arg name="address" ref="address" />
+    </bean>
+</beans>
